@@ -1,0 +1,206 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-algeti/css/bpg-algeti.min.css");
+
+* {
+  font-family: "BPG Algeti", sans-serif;
+  background-color: #eceded;
+}
+
+.title { 
+  font-family: "BPG Algeti", sans-serif;
+  font-size: 1em;
+  width: 380px;
+  padding: .5%;
+}
+
+.container {
+  font-family: "BPG Algeti", sans-serif;
+  width: 1080px;
+  height: 100%;
+  margin: auto;
+  padding: 0 1%;
+}
+
+/* Timer Table */
+
+#timer-table {
+  display: inline-block;
+  /*border: solid 1.5pt darkslategrey;*/
+  border-radius: 5px;
+  background-color: white;
+  font-size: 1em;
+}
+#timer-table-time {
+  text-align: center;
+}
+#timer-table td {
+  border: 1px solid #EFEBE9;
+}
+#timer-table tr:hover {
+  background-color: #FAFAFA;
+}
+.timer-table-row-name {
+  padding-left: 2%;
+  width: 230px;
+}
+.timer-table-row-time {
+  width: 250px;
+  text-align: center;
+}
+.timer-table-row-btns {
+  width: 300px;
+  padding-left: 1%;
+}
+.timer-table button {
+  height: 75px;
+  width: auto;
+  box-shadow:inset 0px .5px 0px 0px #C8E6C9;
+	background:linear-gradient(to bottom, white 90%, #EFEBE9 100%);
+	border-radius: 8px;
+	border: 1.4px solid #EFEBE9;
+	display: inline-block;
+	cursor: pointer;
+	color: darkslategray;
+	font-size: 1.5em;
+	text-decoration: none;
+	text-shadow: 0px .5px 0px #E8F5E9;
+  outline: none;
+  font-family: "roboto slab";
+  border-top: solid 2pt lightgray;
+}
+.timer-table button:hover {
+	background: linear-gradient(to bottom, #E8F5E9 90%, #B0BEC5 100%);
+  opacity: 60%;
+}
+.timer-table button:active {
+	position: relative;
+	top: 2px;
+  border-top: solid 2pt gold;
+}
+
+.time {
+  margin: auto;
+}
+.time-digits {
+  font-size: 2.5em;
+}
+.stopwatch-time-digits {
+  position: absolute;
+  margin: -27px auto auto -118px;
+}
+#stopwatch-master {
+  display: none;
+  position: absolute;
+  margin: 12px auto auto 48px;
+  font-size: 1.6em;
+}
+#car-count {
+  opacity: 0;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #D32F2F;
+  color: white;
+  font-size: 1.5em;
+  width: 35px;
+  height: 35px;
+  margin: -78px 0 0 186px;
+  text-align: center;
+}
+.car-timer {
+  position: absolute;
+  margin-top: -28px;
+  margin-left: 35px;
+}
+.bunker-timer {
+  position: absolute;
+  margin-top: -28px;
+  margin-left: 25px;
+}
+  
+#laps-list {
+  display: none;
+  max-height: 272px;
+  width: 240px;
+  overflow: scroll;
+  font-size: 1.6em;
+  top: 0;
+  vertical-align: top;
+  overflow-x: hidden;
+}
+#laps-list-title {
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  font-weight: bold;
+}
+#lap-times{
+  list-style-type: numerical;
+  margin-top: 0;
+}
+
+/* Settings Table */
+#settings-table {
+  display: inline-block;
+  padding: 1%;
+  background-color: white;
+  font-size: 1.2em;
+}
+#settings-table td {
+  width: 250px;
+}
+.settings-row-title {
+  color: gray;
+  font-size: 1.4em;
+}
+
+.units-slide-title, 
+.units-slide-container {
+  display: inline-block;
+}
+
+.units-slide-title {
+  color: grey;
+}
+
+.gun-upgrade-input {
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.gun-upgrade-input:after {
+
+}
+.upgrade-label {
+  display: block;
+  margin: 1%;
+}
+.upgrade-label:hover {
+  background-color: lightgray;
+}
+/* Blink */
+       
+.blink-text {
+  animation: blinker 0.2s linear 1;
+}
+
+.blink-text-pause {
+  animation: blinker 0.15s linear 1;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Information Table */
+
+.bunker-info {
+  width: 700px;
+  padding: 1%;
+  background-color: white;
+}
+.bunker-info td {
+  width: 225px;
+  background-color: white;
+}
